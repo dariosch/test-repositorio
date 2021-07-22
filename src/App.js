@@ -6,6 +6,7 @@ import Filtrador from "./components/Filtrador";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 
 
@@ -62,14 +63,19 @@ const App = () => {
 
 
   return (
-    <div className="App">
-      <h2>Lista de compras</h2>
-      <Formulario agregarComprob={agregarComprob}  />
-      
-      <Listado tasks={tasks} />
-      <Totales tasks={tasks}/>
-      
-    </div>
+    <Container>
+      <h2 className ="tituloPrincipal">Lista de compras</h2>
+      <hr className ="colorSeparador"></hr>
+      <Row>
+        <Col>
+          <Formulario agregarComprob={agregarComprob}  />
+        </Col>
+        <Col>
+          <Listado tasks={tasks} />
+          <Totales tasks={tasks}/>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

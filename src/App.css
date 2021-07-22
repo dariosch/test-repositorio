@@ -11,6 +11,16 @@
   color:darkred;
 }
 
+.tituloPrincipal{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: darkseagreen;
+}
+
+.colorSeparador{
+  background-color: darkseagreen;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
