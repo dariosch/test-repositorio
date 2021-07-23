@@ -64,6 +64,7 @@ const App = () => {
 
   return (
     <Container>
+      
       <h2 className ="tituloPrincipal">Lista de compras</h2>
       <hr className ="colorSeparador"></hr>
       <Row>
